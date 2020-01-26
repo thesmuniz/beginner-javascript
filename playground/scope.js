@@ -1,50 +1,33 @@
 // const age = 100;
 
 // function go() {
-//   const myAge = 200;
 //   const hair = 'blonde';
-//   console.log(age);
-//   console.log(myAge);
-//   console.log(hair);
 // }
 
 // go();
-/* eslint-disable*/
 
-// function isCool(name) {
-//   if (name === 'wes') {
-//     var cool = true;
-//   }
-//   console.log(cool);
-//   return cool;
+// console.log(age);
+// console.log(hair);
+
+// const dog = 'snickers';
+
+// function logDog() {
+//   console.log(dog);
 // }
 
-// for(let i = 0; i < 10; i++) {
-//   console.log(i);
+// function go() {
+//   const dog = 'sunny';
+//   logDog();
 // }
 
+// go();
 
-const dog = 'snickers';
-
-function logDog(dog) {
-  console.log(dog);
-}
-
-function go() {
-  const dog = 'sunny';
-  logDog('sunny');
-}
-
-go();
-
-function yell() {
-  console.log(name.toUpperCase())
-}
-
+//! Function Scoping (Function inside of a function)
 function sayHi(name) {
-
+  function yell() {
+    console.log(name.toUpperCase());
+  }
   yell();
 }
-
 
 yell();
